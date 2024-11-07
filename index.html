@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,113 +7,128 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f3f3f3;
+            background-color: #e5e5e5;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
         }
-        .report-container {
-            background-color: #fff;
-            width: 80%;
-            max-width: 800px;
-            border-radius: 5px;
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #f9f9f9;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            box-sizing: border-box;
+            border-radius: 8px;
+            overflow: hidden;
         }
-        .report-header {
+        .header {
+            background-color: #f3f3f3;
+            padding: 15px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
         }
-        .report-header h2 {
-            margin: 0;
+        .header h1 {
             font-size: 18px;
+            font-weight: normal;
+            margin: 0;
+        }
+        .header small {
+            font-size: 12px;
+            color: #888;
         }
         .status {
             color: #fff;
             background-color: #4CAF50;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 14px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
         }
-        .report-item {
+        .content {
+            padding: 15px;
+        }
+        .item {
             display: flex;
             justify-content: space-between;
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
         }
-        .report-item label {
-            font-weight: bold;
-            color: #666;
+        .item:last-child {
+            border-bottom: none;
         }
-        .report-item span {
+        .item label {
+            color: #555;
+        }
+        .item span {
             color: #333;
         }
     </style>
 </head>
 <body>
-    <div class="report-container">
-        <div class="report-header">
-            <h2>检测报告详情</h2>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>检测报告详情</h1>
+                <small>scgcjc.scjzjn.com</small>
+            </div>
             <span class="status">正常报告</span>
         </div>
-        <div class="report-item">
-            <label>机构名称:</label>
-            <span>四川晨升工程检测有限公司</span>
-        </div>
-        <div class="report-item">
-            <label>工程名称:</label>
-            <span>空港发展·云璟铂樾住宅及配建幼儿园建设项目</span>
-        </div>
-        <div class="report-item">
-            <label>报告编号:</label>
-            <span>SCCSQ55A2400002</span>
-        </div>
-        <div class="report-item">
-            <label>报告日期:</label>
-            <span>2024-03-22</span>
-        </div>
-        <div class="report-item">
-            <label>检测资质类别:</label>
-            <span>见证取样</span>
-        </div>
-        <div class="report-item">
-            <label>检测结果:</label>
-            <span>见报告</span>
-        </div>
-        <div class="report-item">
-            <label>委托单位:</label>
-            <span>成都锦云置业有限公司</span>
-        </div>
-        <div class="report-item">
-            <label>见证送检人:</label>
-            <span>罗世刚</span>
-        </div>
-        <div class="report-item">
-            <label>检测数据:</label>
-            <span>见报告</span>
-        </div>
-        <div class="report-item">
-            <label>质量监督号:</label>
-            <span>/</span>
-        </div>
-        <div class="report-item">
-            <label>工程部位:</label>
-            <span>总平基础级配碎石垫层</span>
-        </div>
-        <div class="report-item">
-            <label>检测项目:</label>
-            <span>土工击实</span>
-        </div>
-        <div class="report-item">
-            <label>描述:</label>
-            <span>见报告</span>
+        <div class="content">
+            <div class="item">
+                <label>机构名称：</label>
+                <span>四川晨升工程检测有限公司</span>
+            </div>
+            <div class="item">
+                <label>工程名称：</label>
+                <span>空港发展·云璟铂樾住宅及配建幼儿园建设项目</span>
+            </div>
+            <div class="item">
+                <label>报告编号：</label>
+                <span>SCCSQ55A2400002</span>
+            </div>
+            <div class="item">
+                <label>报告日期：</label>
+                <span>2024-03-22</span>
+            </div>
+            <div class="item">
+                <label>检测资质类别：</label>
+                <span>见证取样</span>
+            </div>
+            <div class="item">
+                <label>检测结果：</label>
+                <span>见报告</span>
+            </div>
+            <div class="item">
+                <label>委托单位：</label>
+                <span>成都锦云置业有限公司</span>
+            </div>
+            <div class="item">
+                <label>见证送检人：</label>
+                <span>罗世刚</span>
+            </div>
+            <div class="item">
+                <label>检测数据：</label>
+                <span>见报告</span>
+            </div>
+            <div class="item">
+                <label>质量监督号：</label>
+                <span>/</span>
+            </div>
+            <div class="item">
+                <label>工程部位：</label>
+                <span>总平基础级配碎石垫层</span>
+            </div>
+            <div class="item">
+                <label>检测项目：</label>
+                <span>土工击实</span>
+            </div>
+            <div class="item">
+                <label>描述：</label>
+                <span>见报告</span>
+            </div>
         </div>
     </div>
 </body>
